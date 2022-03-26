@@ -8,18 +8,18 @@
 _Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
- < Provide a short description of your program's functionality. No more than a couple sentences. >
+This lab made sure that we staretd getting compfortable writting our own code wether tahts rewriting or adding whats in the main(). We had to use topics learned in class such as 3np1 to be able to graph data. 
 
 ## GRACE DAYS
-Grace days used for this assignment: < # >
+Grace days used for this assignment: 0
 
-Grace days remaining: < # >/5
+Grace days remaining: 5/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+ none
 
 ## REFERENCES:
- < List any outside resources used >
+ CS Chapter 6 Description
 
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+ none
