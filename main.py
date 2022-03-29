@@ -1,8 +1,4 @@
-'''
-        Print the 3n+1 sequence from n, terminating when it             reaches 1.
-        args: n (int) starting value for 3n+1 sequence
-        return: None
-'''
+import turtle
 
 def seq3np1(n):
     count = 0
@@ -18,32 +14,47 @@ def seq3np1(n):
 
 
 # PART B
-def graphLine(turtle = None , x_up = 0, y_it = 0):
-  upper_bound_2 = int(input(" A positive value for upper bound of range: "))
-  
-  max_value = upperboun
-
-
+def lineGraph(upper_bound):
+  bert = turtle.Turtle()     #draw graph 
+  pete = turtle.Turtle()      #write out max
   wn = turtle.Screen()
-  wn.setworldcoordinates()
-  wn.bgcolor("light green")
+  wn.setworldcoordinates(0 , 0 , 10 , 10)
 
-  ray = turtle.Turtle() 
-  ray.color("hot pink")
-  ray.pensize(3)
+  pete.pu()
+  pete.goto(0,10)
+  
+  max_so_far = 0
+  for x in range(1, upper_bound + 1):
+    result = seq3np1(x)
+    
+    if result > max_so_far:
+      max_so_far = result
 
 
+    pete.goto(0, max_so_far)
+    max_text = "Maximum so far: ", x , result
+    pete.clear()
+    pete.write(max_text)
+  
+    wn.setworldcoordinates(0 , 0, x + 10, max_so_far + 10 )
+    bert.pd()
+    bert.goto(x, result)
+
+  wn.exitonclick
 
 
+  
 
 def main():
   upper_bound = int(input(" A positive value for upper bound of range: "))
   if (upper_bound < 0):
-    return # ask - is this how you end the program 
+    return
 
   for start in range (1, upper_bound + 1):
     seq3np1(upper_bound)
-    print("The current loop value: ",start, "The number of iterations: ",seq3np1(start)) # ask - start  
+    print("The current loop value: ",start, "The number of iterations: ",seq3np1(start)) # ask - why start is being used
     
   seq3np1(3)
+  lineGraph(upper_bound)
+  
 main()
