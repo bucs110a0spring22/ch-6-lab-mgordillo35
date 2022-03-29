@@ -8,7 +8,7 @@
 _Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
-This lab made sure that we staretd getting compfortable writting our own code wether tahts rewriting or adding whats in the main(). We had to use topics learned in class such as 3np1 to be able to graph data. 
+This lab made sure that we staretd getting compfortable writting our own code wether tahts rewriting or adding whats in the main(). We had to use topics learned in class such as 3np1 to be able to graph data and update that data based on user input. 
 
 ## GRACE DAYS
 Grace days used for this assignment: 0
